@@ -34,7 +34,7 @@ export class JsonQuery {
     const keys = Object.keys(this.json)
     for (const key of keys) {
       const val = this.json[key]
-      if (isNaN(Number(val))) {
+      if (!isNaN(Number(val))) {
         if ((query as JSONQueryGreaterThan).$gt) {
           const gtVal = (query as JSONQueryGreaterThan).$gt
           if (val > gtVal) {

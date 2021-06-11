@@ -1,7 +1,15 @@
 {
-  "name": "chase",
+  "name": "tlojs",
+  "description": "The Last One - The last npm package you'll need to install",
   "version": "0.0.1",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tlojs/tlojs"
+  },
+  "keywords": [
+    "tlo"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "tsc",

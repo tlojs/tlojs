@@ -11,11 +11,22 @@ declare global {
     firstOrDefault(): T | undefined
     last(): T
     lastOrDefault(): T | undefined
+    
+    min(): number
+    max(): number
   }
 }
 
 Array.prototype.select = function<T, K>(callback: (item: T) => K) {
   return this.map(callback);
+}
+
+Array.prototype.min = function() {
+  return Math.min(...this)
+}
+
+Array.prototype.max = function() {
+  return Math.max(...this)
 }
 
 Array.prototype.where = function<T>(callback: (item: T) => boolean) {

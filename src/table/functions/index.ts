@@ -1,1 +1,6 @@
 export * from './sum'
+export * from './count'
+export * from './standard-deviation'
+export * from './min'
+export * from './max'
+export * from './mean'

@@ -37,7 +37,7 @@ describe('Array Linq', () => {
       const first = ary.first()
       expect(first).toEqual(1)
     })
-    
+
     it('should throw an exception if its empty', () => {
       const ary: number[] = []
       expect(ary.first).toThrowError()
@@ -50,7 +50,7 @@ describe('Array Linq', () => {
       const first = ary.firstOrDefault()
       expect(first).toEqual(1)
     })
-    
+
     it('should throw an exception if its empty', () => {
       const ary: number[] = []
       const first = ary.firstOrDefault()
@@ -64,7 +64,7 @@ describe('Array Linq', () => {
       const first = ary.last()
       expect(first).toEqual(2)
     })
-    
+
     it('should throw an exception if its empty', () => {
       const ary: number[] = []
       expect(ary.last).toThrowError()
@@ -77,11 +77,27 @@ describe('Array Linq', () => {
       const first = ary.lastOrDefault()
       expect(first).toEqual(2)
     })
-    
+
     it('should throw an exception if its empty', () => {
       const ary: number[] = []
       const first = ary.lastOrDefault()
       expect(first).toBeUndefined()
+    })
+  })
+
+  describe('min', () => {
+    it('should give the min', () => {
+      const ary = [1, 2, 3, 4]
+      const min = ary.min()
+      expect(ary[0]).toBe(min)
+    })
+  })
+
+  describe('max', () => {
+    it('should give the max', () => {
+      const ary = [1, 2, 3, 4]
+      const max = ary.max()
+      expect(ary[3]).toBe(max)
     })
   })
 })

@@ -2,7 +2,11 @@
   "name": "tlojs",
   "description": "The Last One - The last npm package you'll need to install",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "author": {
+    "name": "Chase Willden"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/tlojs/tlojs"

@@ -7,6 +7,7 @@ handy functions, functionality, etc to get the job done.
 * [Dependency Injection]('./src/dependency-injection/README.md')
 * [JSON]('./src/json/README.md')
 * [Table]('./src/table/README.md')
+* [Events]('./src/events/README.md')
 
 
 ## Examples
@@ -39,5 +40,24 @@ class B {
 }
 
 const service = Injector.resolve<B>(B)
+
+```
+
+### Event and Event Hub Usage
+```typescript
+
+// Define the custom event
+class TestEvent extends BaseEvent {
+  name = 'Test'
+}
+
+// Create a new instance of the event
+const ev = new TestEvent()
+
+// Listen to the event
+GlobalEventHub.register(TestEvent, (e) => console.log(e))
+
+// Dispatch the event
+ev.dispatch()
 
 ```

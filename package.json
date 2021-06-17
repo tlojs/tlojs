@@ -1,7 +1,7 @@
 {
   "name": "tlojs",
   "description": "The Last One - The last npm package you'll need to install",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": {
@@ -12,7 +12,12 @@
     "url": "https://github.com/tlojs/tlojs"
   },
   "keywords": [
-    "tlo"
+    "tlo",
+    "tables",
+    "events",
+    "json",
+    "arrays",
+    "dependency injection"
   ],
   "license": "MIT",
   "scripts": {

@@ -24,6 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      
+      # Cache the node_modules
+      - uses: c-hive/gha-yarn-cache@v2
 
       # Runs a single command using the runners shell
       - name: Install Packages

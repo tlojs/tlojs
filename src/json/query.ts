@@ -1,3 +1,5 @@
+import { GenericObject } from "../types/type";
+
 declare type JSONQueryGreaterThan = {
   $gt: number;
 };
@@ -13,7 +15,7 @@ export declare type JSONQuery = {
 
 export class JsonQuery {
   constructor(
-    private json: {[key: string]: any}
+    private json: GenericObject
   ) {
 
   }
@@ -29,7 +31,7 @@ export class JsonQuery {
   }
 
   private anyKeyWith<T>(query: JSONQueryValue): T {
-    const obj: {[key: string]: any} = {}
+    const obj: GenericObject = {}
 
     const keys = Object.keys(this.json)
     for (const key of keys) {

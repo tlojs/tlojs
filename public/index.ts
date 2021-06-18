@@ -8,7 +8,7 @@ const data = []
 for (let i = 0; i < rows; i++) {
   const row = {}
   for (const col of cols) {
-    row['Column ' + col] = i
+    row['Column ' + col] = i * Math.ceil((Math.random() * 100))
   }
   data.push(row)
 }

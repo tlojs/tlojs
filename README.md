@@ -22,6 +22,10 @@ const table = new Table({ data })
 const query = table.select('A:B')
 
 const results = query.exec(Sum)
+
+// Render the table
+const renderer = new TableRenderer(table)
+renderer.renderTo(document.getElementById('data'))
 ```
 
 ### Dependency Injection Usage

@@ -59,5 +59,15 @@ describe('Table', () => {
       table.clear()
       expect(table.rows).toHaveLength(0)
     })
+
+    it('should return an array of headers', () => {
+      const data = [
+        { a: 1, b: { a: 1 } },
+      ]
+
+      const table = new Table({ data })
+      const headers = table.getHeaders()
+      expect(headers).toEqual(['a', 'b'])
+    })
   })
 })

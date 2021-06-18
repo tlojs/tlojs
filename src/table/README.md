@@ -13,3 +13,9 @@ const query = table.select('A:B')
 
 const results = query.exec(Sum)
 ```
+
+## Render the table
+```typescript
+const renderer = new TableRenderer(table)
+renderer.renderTo(document.getElementById('data'))
+```

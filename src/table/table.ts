@@ -24,4 +24,10 @@ export class Table<T> {
     this.rows.forEach(x => x.destroy())
     this.rows = []
   }
+
+  getHeaders() {
+    const firstRow = this.rows.firstOrDefault();
+    const cells = firstRow?.cells ?? []
+    return cells.select(x => x.key)
+  }
 }

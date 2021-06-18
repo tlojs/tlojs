@@ -11,7 +11,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "lib",
-    "lib": ["es6", "ES2015"],
+    "lib": ["es6", "ES2015", "DOM"],
     "rootDir": "src"
   },
   "exclude": [

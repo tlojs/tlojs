@@ -3,11 +3,12 @@ TLO.js is the last npm package that you'll have to install. With little to no su
 handy functions, functionality, etc to get the job done.
 
 ## Sub Libraries
-* [Array]('./src/array/README.md')
-* [Dependency Injection]('./src/dependency-injection/README.md')
-* [JSON]('./src/json/README.md')
-* [Table]('./src/table/README.md')
-* [Events]('./src/events/README.md')
+* [Array]('https://github.com/tlojs/tlojs/blob/master/src/array/README.md')
+* [Dependency Injection]('https://github.com/tlojs/tlojs/blob/master/src/dependency-injection/README.md')
+* [JSON]('https://github.com/tlojs/tlojs/blob/master/src/json/README.md')
+* [Table]('https://github.com/tlojs/tlojs/blob/master/src/table/README.md')
+* [Events]('https://github.com/tlojs/tlojs/blob/master/src/events/README.md')
+* [Logger]('https://github.com/tlojs/tlojs/blob/master/src/logger/README.md')
 
 
 ## Examples

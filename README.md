@@ -19,6 +19,7 @@ const data = [
 ]
 
 const table = new Table({ data })
+table.sort(0, true)
 const query = table.select('A:B')
 
 const results = query.exec(Sum)

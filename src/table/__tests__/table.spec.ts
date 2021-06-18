@@ -69,5 +69,45 @@ describe('Table', () => {
       const headers = table.getHeaders()
       expect(headers).toEqual(['a', 'b'])
     })
+
+    it('should sort the table from ascending', () => {
+      const data = [
+        {a: 1},
+        {a: 2},
+        {a: 1},
+        {a: 3}
+      ]
+
+      const table = new Table({ data })
+
+      table.sort(0, false)
+      expect(table.rows[0].cells[0].value).toBe(1)
+    })
+
+    it('should sort the table from descending', () => {
+      const data = [
+        {a: 1},
+        {a: 2},
+        {a: 1},
+        {a: 3}
+      ]
+
+      const table = new Table({ data })
+
+      table.sort(0, true)
+      expect(table.rows[0].cells[0].value).toBe(3)
+    })
+
+    it('should sort on text', () => {
+      const data = [
+        {a: '1'},
+        {a: '2'},
+        {a: '3'}
+      ];
+
+      const table = new Table({ data })
+      table.sort(0, true)
+      expect(table.rows[0].cells[0].value).toBe('3')
+    })
   })
 })

@@ -30,4 +30,27 @@ export class Table<T> {
     const cells = firstRow?.cells ?? []
     return cells.select(x => x.key)
   }
+
+  sort(columnIndex: number, descending?: boolean) {
+    this.rows.sort((a, b) => {
+      let aValue: any = undefined;
+      let bValue: any = undefined;
+      if (a.cells.length > columnIndex) {
+        aValue = a.cells[columnIndex].value
+      }
+
+      if (b.cells.length > columnIndex) {
+        bValue = b.cells[columnIndex].value
+      }
+
+      if (aValue > bValue) {
+        return descending ? -1 : 1;
+      }
+      if (aValue < bValue) {
+        return descending ? 1 : -1;
+      }
+
+      return 0;
+    })
+  }
 }

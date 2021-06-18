@@ -23,6 +23,7 @@
   "scripts": {
     "build": "tsc && yarn build:style",
     "test": "jest --watch",
+    "test:pipeline": "jest",
     "serve": "parcel public/index.html",
     "build:style": "node ./scripts/style.js"
   },

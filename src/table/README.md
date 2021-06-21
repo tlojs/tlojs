@@ -42,6 +42,18 @@ const json = query.export(JsonExport)
 const csv = query.export(CsvExport)
 ```
 
+## Load the table from other formats
+```typescript
+const csv = `
+a,b,c
+1,1,1
+2,2,2
+3,3,3
+`;
+
+const table = Table.load(CsvLoader, csv)
+```
+
 ## Table Functions
 | Name | Description |
 |---|---|

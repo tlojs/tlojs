@@ -1,5 +1,6 @@
 import { Type } from "../types/type"
 import { TableExport } from "./export"
+import { TableLoader } from "./loader"
 import { TableQuery, TableQueryReference } from "./query"
 import { TableRow } from "./row"
 
@@ -15,6 +16,17 @@ export class Table<T> {
     public options: TableOptions<T>
   ) {
     this.rows = TableRow.fromData(options.data)
+  }
+
+  /**
+   * Load data from a raw format into a table
+   * @param loader 
+   * @param data 
+   * @returns 
+   */
+  static load<T, K>(loader: Type<TableLoader<T, K>>, data: K) {
+    const instance = new loader()
+    return instance.load(data)
   }
 
   /**

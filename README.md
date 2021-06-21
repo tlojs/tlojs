@@ -28,6 +28,16 @@ const results = query.exec(Sum)
 // Render the table
 const renderer = new TableRenderer(table)
 renderer.renderTo(document.getElementById('data'))
+
+// Or load the table from a CSV
+const csv = `
+a,b,c
+1,1,1
+2,2,2
+3,3,3
+`;
+
+const table = Table.load(CsvLoader, csv)
 ```
 
 ### Dependency Injection Usage

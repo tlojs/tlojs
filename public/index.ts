@@ -1,4 +1,4 @@
-import { Table, TableRenderer } from '../src/index'
+import { Table, TableRenderer } from '../src'
 
 const cols = ['A', 'B', 'C', 'D', 'E', 'F']
 const rows = 100

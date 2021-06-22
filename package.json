@@ -1,7 +1,7 @@
 {
   "name": "tlojs",
   "description": "The Last One - The last npm package you'll need to install",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": {
@@ -17,7 +17,8 @@
     "events",
     "json",
     "arrays",
-    "dependency injection"
+    "dependency injection",
+    "strings"
   ],
   "license": "MIT",
   "scripts": {
@@ -28,7 +29,8 @@
     "build:style": "node ./scripts/style.js"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "2.0.0-beta.3.1",
+    "@parcel/transformer-sass": "2.0.0-nightly.727",
+    "@parcel/transformer-typescript-tsc": "2.0.0-nightly.731",
     "@types/jest": "26.0.23",
     "glob": "^7.1.7",
     "jest": "27.0.1",

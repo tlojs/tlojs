@@ -9,6 +9,7 @@ handy functions, functionality, etc to get the job done.
 * [Table]('https://github.com/tlojs/tlojs/blob/master/src/table/README.md')
 * [Events]('https://github.com/tlojs/tlojs/blob/master/src/events/README.md')
 * [Logger]('https://github.com/tlojs/tlojs/blob/master/src/logger/README.md')
+* [String]('https://github.com/tlojs/tlojs/blob/master/src/string/README.md')
 
 
 ## Examples
